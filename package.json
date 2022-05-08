@@ -33,6 +33,7 @@
     "@spotify/tsconfig": "^13.0.1",
     "@typescript-eslint/parser": "^5.22.0",
     "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^10.2.4",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",

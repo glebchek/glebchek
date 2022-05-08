@@ -1,5 +1,7 @@
+const path = require('path');
 // Plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 // Local
@@ -11,9 +13,16 @@ module.exports = {
     path: paths.appDist,
     filename: '[name].[contenthash:8].js',
     publicPath: '/',
+    clean: true,
   },
   target: 'web',
   plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: path.resolve(paths.appAssets, "CNAME"), to: paths.appDist },
+        { from: path.resolve(paths.appAssets, ".nojekyll"), to: paths.appDist },
+      ],
+    }),
     new HtmlWebpackPlugin({
       title: 'Homepage',
       template: paths.appTemplateHtml,
