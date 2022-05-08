@@ -1,0 +1,6 @@
+{
+  "extends": "@spotify/tsconfig",
+  "compilerOptions": {
+    "noEmit": false,
+  }
+}
