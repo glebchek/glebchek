@@ -1,0 +1,53 @@
+{
+  "name": "@glebchek/homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.config.prod.js",
+    "start": "webpack serve --config ./config/webpack.config.dev.js",
+    "test": "tsc && eslint src && prettier -c src",
+    "autofix": "eslint --fix src && prettier -w src",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glebchek/glebchek.git"
+  },
+  "author": "Gleb Chekushin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glebchek/glebchek/issues"
+  },
+  "homepage": "https://glebchek.com",
+  "dependencies": {
+    "core-js": "^3.22.4",
+    "lit": "^2.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@spotify/eslint-config-base": "^13.0.1",
+    "@spotify/eslint-config-typescript": "^13.0.1",
+    "@spotify/prettier-config": "^13.0.1",
+    "@spotify/tsconfig": "^13.0.1",
+    "@typescript-eslint/parser": "^5.22.0",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^10.2.4",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-lit": "^1.6.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-wc": "^1.3.2",
+    "eslint-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2",
+    "ts-lit-plugin": "^1.2.1",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
