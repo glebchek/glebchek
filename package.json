@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack --config ./config/webpack.config.prod.js",
     "start": "webpack serve --config ./config/webpack.config.dev.js",
-    "lint": "eslint \"./src/**/*.{js,ts}\"",
-    "lint-fix": "eslint --fix \"./src/**/*.{js,ts}\""
+    "test": "tsc && eslint src && prettier -c src",
+    "autofix": "eslint --fix src && prettier -w src"
   },
   "repository": {
     "type": "git",
