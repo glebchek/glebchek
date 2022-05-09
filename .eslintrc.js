@@ -1,8 +1,13 @@
 const baseConfigList = [
+  'plugin:wc/recommended',
+  'plugin:lit/recommended',
   '@spotify/eslint-config-base',
 ];
 
-const jsConfigList = [...baseConfigList, 'prettier'];
+const jsConfigList = [
+  ...baseConfigList,
+  'prettier',
+];
 const tsConfigList = [
   ...baseConfigList,
   '@spotify/eslint-config-typescript',

@@ -2,5 +2,11 @@
   "extends": "@spotify/tsconfig",
   "compilerOptions": {
     "noEmit": false,
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      }
+    ]
   }
 }
