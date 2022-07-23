@@ -21,6 +21,7 @@ module.exports = {
       patterns: [
         { from: path.resolve(paths.appAssets, "CNAME"), to: paths.appDist },
         { from: path.resolve(paths.appAssets, ".nojekyll"), to: paths.appDist },
+        { from: path.resolve(paths.appAssets, "resume.json"), to: paths.appDist },
       ],
     }),
     new HtmlWebpackPlugin({

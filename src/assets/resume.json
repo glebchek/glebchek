@@ -1,0 +1,143 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Gleb Chekushin",
+    "label": "Frontend developer",
+    "picture": "",
+    "email": "mail@glebchek.com",
+    "website": "",
+    "summary": "I'm a software engineer based in Ufa, Russia with almost 5 years of work experience in the software industry.   My focus area is Frontend development with React, Typescript and MobX, but I am open to learn new frameworks/tools, this also includes gaining experience in Fullstack development",
+    "location": {
+      "address": "",
+      "postalCode": "450000",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Alrosa IT",
+      "position": "Frontend Developer",
+      "website": "",
+      "startDate": "2022-03-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Sibintek",
+      "position": "Software Developer (Frontend)",
+      "website": "",
+      "startDate": "2018-09-01",
+      "summary": "As part of Frontend team, I am responsible for supporting and development of Web-based workspace for oil industry workers, internal product for Rosneft Oil Company. Apart from resolving customer's issues, my latest contributions include implementing ability to execute formulas on data grids and implementing charts module with switchable data sources, which greatly improved user experience. Also, as person with sufficient experience in Linux I contributed big part in establishing CI pipelines in very restricted environment, which improved developer experience and led us to faster and more automated release cycle.",
+      "highlights": [],
+      "endDate": "2022-02-01"
+    },
+    {
+      "company": "Sibintek",
+      "position": "Software Developer (Frontend)",
+      "website": "",
+      "startDate": "2017-09-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "2018-08-01"
+    },
+    {
+      "company": "Cloud&Heat Technologies GmbH",
+      "position": "Intern",
+      "website": "",
+      "startDate": "2016-07-01",
+      "summary": "Internship diring Bachelor studies. Implemented plugin for Owncloud to connect to custom secured key-value data storage and researched possibilities to secure service endpoits with port-knocking tehnique.",
+      "highlights": [],
+      "endDate": "2016-09-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Ufa State Aviation Technical University",
+      "area": "",
+      "studyType": "Master's degree",
+      "startDate": "2017-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2019-01-01"
+    },
+    {
+      "institution": "Ufa State Aviation Technical University",
+      "area": "",
+      "studyType": "Bachelor's degree",
+      "startDate": "2013-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2017-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-end Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MobX",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Webpack",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ansible",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Research and Development (R&D)",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native or bilingual proficiency"
+    }
+  ]
+}
