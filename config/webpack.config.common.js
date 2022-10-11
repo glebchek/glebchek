@@ -57,6 +57,13 @@ module.exports = {
           filename: 'fonts/[name][ext]',
         },
       },
+      {
+        test: /\.(css)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'css/[name][ext]',
+        },
+      },
     ],
   },
 };
