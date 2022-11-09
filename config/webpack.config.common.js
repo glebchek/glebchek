@@ -13,7 +13,7 @@ module.exports = {
     path: paths.appDist,
     filename: '[name].[contenthash:8].js',
     publicPath: '/',
-    clean: true,
+    clean: process.env.NODE_ENV === "production",
   },
   target: 'web',
   plugins: [
@@ -61,7 +61,7 @@ module.exports = {
         test: /\.(css)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'css/[name][ext]',
+          filename: 'css/[name][hash][ext]',
         },
       },
     ],
