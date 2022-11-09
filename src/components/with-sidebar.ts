@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
-export class MyElement extends LitElement {
+export class WithSidebar extends LitElement {
   static styles = css`
     :host {
       display: flex;
@@ -24,4 +24,4 @@ export class MyElement extends LitElement {
   }
 }
 
-customElements.define('with-sidebar', MyElement);
+customElements.define('with-sidebar', WithSidebar);
