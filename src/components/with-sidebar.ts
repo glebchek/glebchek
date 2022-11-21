@@ -5,11 +5,11 @@ export class WithSidebar extends LitElement {
     :host {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--s1);
     }
 
     ::slotted([slot='sidebar']) {
       flex-grow: 1;
+      flex-basis: 15rem;
     }
 
     ::slotted([slot='content']) {

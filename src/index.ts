@@ -13,14 +13,14 @@ class App extends LitElement {
       --color-5: #f0efef;
       --color-6: #fcfcfc;
 
-      --step--2: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
-      --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.2rem);
-      --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
-      --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
-      --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
-      --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
-      --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
-      --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
+      --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+      --step--1: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.9rem);
+      --step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+      --step-1: clamp(1.2rem, calc(1.13rem + 0.36vw), 1.41rem);
+      --step-2: clamp(1.44rem, calc(1.33rem + 0.55vw), 1.76rem);
+      --step-3: clamp(1.73rem, calc(1.57rem + 0.81vw), 2.2rem);
+      --step-4: clamp(2.07rem, calc(1.84rem + 1.16vw), 2.75rem);
+      --step-5: clamp(2.49rem, calc(2.16rem + 1.63vw), 3.43rem);
 
       --space-3xs: clamp(0.31rem, calc(0.29rem + 0.12vw), 0.38rem);
       --space-2xs: clamp(0.69rem, calc(0.66rem + 0.12vw), 0.75rem);
@@ -51,7 +51,7 @@ class App extends LitElement {
       box-shadow: 0 0 8px rgba(13, 13, 13, 0.15);
       margin-left: auto;
       margin-right: auto;
-      max-width: 78rem;
+      max-width: 70rem;
     }
   `;
 
