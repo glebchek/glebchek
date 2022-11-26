@@ -13,15 +13,18 @@ module.exports = {
     path: paths.appDist,
     filename: '[name].[contenthash:8].js',
     publicPath: '/',
-    clean: process.env.NODE_ENV === "production",
+    clean: process.env.NODE_ENV === 'production',
   },
   target: 'web',
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(paths.appAssets, "CNAME"), to: paths.appDist },
-        { from: path.resolve(paths.appAssets, ".nojekyll"), to: paths.appDist },
-        { from: path.resolve(paths.appAssets, "resume.json"), to: paths.appDist },
+        { from: path.resolve(paths.appAssets, 'CNAME'), to: paths.appDist },
+        { from: path.resolve(paths.appAssets, '.nojekyll'), to: paths.appDist },
+        {
+          from: path.resolve(paths.appAssets, 'resume.json'),
+          to: paths.appDist,
+        },
       ],
     }),
     new HtmlWebpackPlugin({
@@ -55,13 +58,6 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'fonts/[name][ext]',
-        },
-      },
-      {
-        test: /\.(css)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'css/[name][hash][ext]',
         },
       },
     ],
