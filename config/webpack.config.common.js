@@ -3,7 +3,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-
+// Misc
+const sveltePreprocess = require('svelte-preprocess');
 // Local
 const paths = require('./paths');
 
@@ -36,6 +37,13 @@ module.exports = {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     }),
   ],
+  resolve: {
+    alias: {
+      svelte: path.dirname(require.resolve('svelte/package.json')),
+    },
+    extensions: ['.mjs', '.js', '.svelte', '.ts'],
+    mainFields: ['svelte', 'browser', 'module', 'main'],
+  },
   module: {
     rules: [
       {
@@ -45,6 +53,18 @@ module.exports = {
           extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
         },
         use: ['babel-loader'],
+      },
+      {
+        test: /\.svelte$/,
+        exclude: /node_modules\/(?!svelte)/,
+        use: {
+          loader: 'svelte-loader',
+          options: {
+            preprocess: [
+              sveltePreprocess.babel(),
+            ],
+          },
+        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

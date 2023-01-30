@@ -10,3 +10,7 @@ declare module '*.woff2';
 declare module '*.eot';
 declare module '*.ttf';
 declare module '*.otf';
+
+declare module '*.svelte' {
+  export { SvelteComponentDev as default } from 'svelte/internal';
+}
