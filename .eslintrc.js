@@ -1,6 +1,4 @@
 const baseConfigList = [
-  'plugin:wc/recommended',
-  'plugin:lit/recommended',
   '@spotify/eslint-config-base',
 ];
 

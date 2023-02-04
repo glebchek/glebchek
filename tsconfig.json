@@ -1,11 +1,3 @@
 {
   "extends": "@spotify/tsconfig",
-  "compilerOptions": {
-    "plugins": [
-      {
-        "name": "ts-lit-plugin",
-        "strict": true
-      }
-    ]
-  }
 }
