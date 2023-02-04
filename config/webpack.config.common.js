@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // Misc
 const sveltePreprocess = require('svelte-preprocess');
 // Local
@@ -36,6 +37,7 @@ module.exports = {
       context: paths.appSrc,
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     }),
+    new MiniCssExtractPlugin(),
   ],
   resolve: {
     alias: {
@@ -60,11 +62,14 @@ module.exports = {
         use: {
           loader: 'svelte-loader',
           options: {
-            preprocess: [
-              sveltePreprocess.babel(),
-            ],
+            preprocess: [sveltePreprocess.babel()],
+            emitCss: true,
           },
         },
+      },
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
