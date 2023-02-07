@@ -15,6 +15,8 @@
 </div>
 
 <style>
+  @import '~@ibm/plex/css/ibm-plex.min.css';
+
   div {
     height: 100%;
     box-shadow: 0 0 8px rgba(13, 13, 13, 0.15);
@@ -25,5 +27,7 @@
 
   :global(body) {
     background-color: var(--color-6);
+
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   }
 </style>
