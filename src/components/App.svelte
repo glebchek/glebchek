@@ -1,7 +1,7 @@
 <script lang="ts">
   import Content from './Content.svelte';
   import Sidebar from './Sidebar.svelte';
-  import WithSidebar from './WithSidebar.svelte';
+  import WithSidebar from './common/WithSidebar.svelte';
 
   import '../css/css-reset.css';
   import '../css/global-style.css';
@@ -19,7 +19,7 @@
 
   div {
     height: 100%;
-    box-shadow: 0 0 8px rgba(13, 13, 13, 0.15);
+    box-shadow: var(--shadow-elevation-low);
     margin-left: auto;
     margin-right: auto;
     max-width: 70rem;
