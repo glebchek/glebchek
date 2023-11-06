@@ -8,7 +8,7 @@
 </script>
 
 <div>
-  <WithSidebar>
+  <WithSidebar sidebarWidth="20rem">
     <Sidebar slot="sidebar" />
     <Content slot="content" />
   </WithSidebar>

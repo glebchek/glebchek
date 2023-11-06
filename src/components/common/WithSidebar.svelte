@@ -1,4 +1,8 @@
-<div class="with-sidebar">
+<script lang="ts">
+  export let sidebarWidth: string;
+</script>
+
+<div class="with-sidebar" style="--sidebarWidth: {sidebarWidth}">
   <slot name="sidebar" />
   <slot name="content" />
 </div>
@@ -11,7 +15,7 @@
 
   .with-sidebar > :global(*):first-child {
     flex-grow: 1;
-    flex-basis: 15rem;
+    flex-basis: var(--sidebarWidth);
   }
 
   .with-sidebar > :global(*):last-child {
