@@ -18,8 +18,12 @@
   @import '~@ibm/plex/css/ibm-plex.min.css';
 
   div {
+    /* @link https://utopia.fyi/clamp/calculator?a=1120,1920,0—64 */
+    --fluid-0-64: clamp(0rem, -5.6rem + 8vw, 4rem);
+
     height: 100%;
     box-shadow: var(--shadow-elevation-low);
+    margin-top: var(--fluid-0-64);
     margin-left: auto;
     margin-right: auto;
     max-width: 70rem;
