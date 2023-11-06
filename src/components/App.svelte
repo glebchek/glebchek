@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Content from './Content.svelte';
-  import Sidebar from './Sidebar.svelte';
+  import Content from './Content';
+  import Sidebar from './Sidebar';
   import WithSidebar from './common/WithSidebar.svelte';
 
   import '../css/css-reset.css';
