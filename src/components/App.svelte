@@ -17,6 +17,10 @@
 <style>
   @import '~@ibm/plex/css/ibm-plex.min.css';
 
+  @page {
+    margin: 0;
+  }
+
   div {
     /* @link https://utopia.fyi/clamp/calculator?a=1120,1920,0—64 */
     --fluid-0-64: clamp(0rem, -5.6rem + 8vw, 4rem);
