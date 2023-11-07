@@ -28,6 +28,7 @@
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.18.6",
+    "@kurone-kito/jsonresume-types": "^0.4.0",
     "@spotify/eslint-config-base": "^14.1.5",
     "@spotify/eslint-config-typescript": "^14.1.5",
     "@spotify/prettier-config": "^14.1.5",

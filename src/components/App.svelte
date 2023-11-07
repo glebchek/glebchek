@@ -5,14 +5,32 @@
 
   import '../css/css-reset.css';
   import '../css/global-style.css';
+
+  import { onMount } from 'svelte';
+  import type { ResumeSchema } from '@kurone-kito/jsonresume-types';
+
+  let resumeData: ResumeSchema;
+
+  onMount(async () => {
+    try {
+      const response = await fetch('/resume.json');
+      resumeData = await response.json();
+    } catch (error) {
+      console.log(error);
+    }
+  });
 </script>
 
-<div>
-  <WithSidebar sidebarWidth="20rem">
-    <Sidebar slot="sidebar" />
-    <Content slot="content" />
-  </WithSidebar>
-</div>
+{#if resumeData}
+  <div>
+    <WithSidebar sidebarWidth="20rem">
+      <Sidebar basics={resumeData?.basics} slot="sidebar" />
+      <Content slot="content" />
+    </WithSidebar>
+  </div>
+{:else}
+  <p>loading</p>
+{/if}
 
 <style>
   @import '~@ibm/plex/css/ibm-plex.min.css';
